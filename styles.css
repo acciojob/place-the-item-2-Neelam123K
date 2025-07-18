@@ -1,2 +1,38 @@
 
 /* Your CSS Code here. */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex container */
+.holder {
+  display: flex;
+  flex-wrap: wrap;              /* Allow items to wrap to next line */
+  justify-content: center;      /* Center items horizontally */
+  align-items: center;          /* Center items vertically */
+  height: 100vh;                /* Full viewport height */
+}
+
+/* Flex items */
+.item {
+  width: 150px;
+  height: 200px;
+  font-size: 60px;
+  text-align: center;
+  line-height: 200px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Specific colors for items */
+.item:nth-child(1) {
+  background-color: red;
+}
+.item:nth-child(2) {
+  background-color: blue;
+}
+.item:nth-child(3) {
+  background-color: green;
+}
